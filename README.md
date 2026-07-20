@@ -1,24 +1,24 @@
 # Weather App with Saved Cities (Kotlin + Jetpack Compose)
 
-An Android weather app where users log in, save cities they care about, and check live current weather for each one — built to practice a full, realistic app architecture: local login, a real local database, public API integration, and multi-screen navigation.
+An Android weather app where users log in, save cities they care about, and check live current weather for each one built to practice a full, realistic app architecture: local login, a real local database, public API integration, and multi-screen navigation.
 
 ## Features
 
-- **Local login screen** — simple local/mock authentication gating access to the app (not a real backend auth system)
-- **Live weather data** — fetches current temperature, conditions, and humidity from the OpenWeatherMap API
-- **Saved cities with full CRUD** — add a city, view your saved list, tap in for live weather detail, remove a city you no longer want
-- **Local database persistence** — saved cities stored with Room (SQLite), surviving app restarts
-- **Multi-screen navigation** — Login → City List → City Detail, using Jetpack Navigation Compose
-- **Proper loading/error states** — a misspelled or invalid city name shows a clear error message instead of crashing or silently failing
+- **Local login screen** simple local/mock authentication gating access to the app (not a real backend auth system)
+- **Live weather data** fetches current temperature, conditions, and humidity from the OpenWeatherMap API
+- **Saved cities with full CRUD** add a city, view your saved list, tap in for live weather detail, remove a city you no longer want
+- **Local database persistence** saved cities stored with Room (SQLite), surviving app restarts
+- **Multi-screen navigation** Login → City List → City Detail, using Jetpack Navigation Compose
+- **Proper loading/error states** a misspelled or invalid city name shows a clear error message instead of crashing or silently failing
 
 ## Tech Stack
 
 - **Kotlin** + **Jetpack Compose**
-- **Retrofit** + **Gson** — networking and JSON parsing
-- **Room** — local SQLite database
-- **Navigation Compose** — multi-screen navigation
-- **ViewModel + StateFlow** — state management surviving configuration changes
-- **Repository pattern** — separates data logic (network + database) from the UI layer
+- **Retrofit** + **Gson** networking and JSON parsing
+- **Room** local SQLite database
+- **Navigation Compose** multi-screen navigation
+- **ViewModel + StateFlow** state management surviving configuration changes
+- **Repository pattern** separates data logic (network + database) from the UI layer
 
 ## What I practiced building this
 
